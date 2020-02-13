@@ -1,0 +1,41 @@
+// Color Settings
+$maincolor: #FC2424
+$textColor: #fff
+
+// Keyframes
+@keyframes fadeInTop
+  from
+    transform: translateY(-100px)
+  to
+    transform: translateY(0)
+
+@keyframes fadeOutTop
+  from
+    transform: translateY(0)
+  to
+    transform: translateY(-100px)
+
+.dontshow
+  display: none
+  animation: fadeInTop .5s linear
+
+div.showwebsiteOffline
+  display: flex
+  top: 0
+
+div.disablewebsiteOffline
+  animation: fadeOutTop .5s linear
+
+#websiteOffline
+  background-color: $maincolor
+  justify-content: center
+  position: absolute
+  left: 0
+  right: 0
+  z-index: 100
+  p
+    color: $textColor
+    width: 60%
+    margin: 20px 0
+    i
+      padding: 0 10px 0 0
